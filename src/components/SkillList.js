@@ -2,9 +2,9 @@ import React from 'react'
 
 function SkillList({ skills, onDelete }) {
     return (
-      <ul>
+      <ul id="skill-list">
         {skills.map((skill, index) => (
-          <li key={index} id={`skill-${index}`} onClick={() => onDelete(index)}>
+          <li key={index} id={`skill-number-${index}`} onClick={() => onDelete(index)}>
             {skill}
           </li>
         ))}
